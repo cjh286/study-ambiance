@@ -22,16 +22,17 @@ def select_all_tasks(conn):
     :return:
     """
     cur = conn.cursor()
-    cur.execute("SELECT * FROM tasks")
+    cur.execute("SELECT * FROM Notes")
 
     rows = cur.fetchall()
 
     tasks = {}
-    tasks['tasks'] = rows
+    tasks['Title'] = rows
     return tasks
 
 def main():
-    database = os.path.abspath("sqlite/peaches.db")
+    return 'hello'
+    database = os.path.abspath("sqlite/study-ambiance.db")
 
     # create a database connection
     conn = create_connection(database)
