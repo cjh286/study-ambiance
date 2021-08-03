@@ -1,5 +1,5 @@
 export const getTasks = () => {
-  return fetch("http://127.0.0.1:5000/getTasks", {
+  return fetch("/getTasks", {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",

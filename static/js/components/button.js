@@ -16,7 +16,7 @@ const Button = () => {
     .catch((error) => console.log("error: ", error));
   }
 
-  return (<button onClick={onClick}>Button</button>);
+  return (<button onClick={onClick}>Hello World!!</button>);
 };
 
 export default Button;
