@@ -31,7 +31,8 @@ def select_all_tasks(conn):
     return tasks
 
 def main():
-    database = os.path.abspath("sqlite/study-ambiance.db")
+    database = os.path.abspath("server/sqlite/study-ambiance.db")
+    print(database)
 
     # create a database connection
     conn = create_connection(database)
